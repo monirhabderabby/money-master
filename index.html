@@ -11,28 +11,75 @@
 <body>
     <section class="container mt-3">
         <!-- Heading -->
-        <h1 class="text-center">Money Sense</h1>
+        <h1 class="text-center lato">Money Sense</h1>
         <!-- Heading End -->
 
         <div class="row mt-2">
             <!-- Left Side Content -->
-            <div class="col-8">
+            <div class="col-lg-8 col-md-12">
                 <div class="">
                     <img class="img-fluid" src="images/money.jpg" alt="">
                 </div>
             </div>
             <!-- Left Side Content End -->
 
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
                 <!-- Income Section -->
                 <div>
                     <h2 class="text-center">Income</h2>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Income</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Income</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                       </div>
                 </div>
                 <!-- Income Section End -->
+
+                <!-- Expense Section -->
+                <div>
+                    <h2 class="text-center">Expense</h2>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Food</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Rent</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Clothes</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <button class="btn">Calculate</button>
+                    <!-- Calculate Button End -->
+                </div>
+                <!-- Expense Section End -->
+
+                <!-- Output Balance & Expense -->
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <h5>Total Expenses: <span>00</span></h5>
+                    <h5>Balance: <span>00</span></h5>
+                </div>
+                <!-- Output Balance & Expense End -->
+
+                <!-- Money Saving Section -->
+                <div class="container d-flex justify-content-around mx-auto mt-5">
+                    <p class="my-auto">Save: </p>
+                    <input class="input-save-percen my-auto" type="text">
+                    <p class="my-auto">%</p>
+                    <button class="save-btn">save</button>
+                </div>
+                <hr>
+                <div class="">
+                    <h5>Saving Amount: <span>00</span></h5>
+                    <h5>Remaining Balance: <span>00</span></h5>
+                </div>
+                <!-- Money Saving Section End -->
+                    
             </div>
 
         </div>
