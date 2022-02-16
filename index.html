@@ -29,7 +29,7 @@
                     <h2 class="text-center">Income</h2>
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Income</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="input-income">
                       </div>
                 </div>
                 <!-- Income Section End -->
@@ -39,21 +39,21 @@
                     <h2 class="text-center">Expense</h2>
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Food</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="food">
                     </div>
 
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Rent</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="rent">
                     </div>
 
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Clothes</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="clothes">
                     </div>
 
                     <!-- Calculate Button -->
-                    <button class="btn">Calculate</button>
+                    <button class="btn" id="calculate-btn">Calculate</button>
                     <!-- Calculate Button End -->
                 </div>
                 <!-- Expense Section End -->
@@ -61,8 +61,8 @@
                 <!-- Output Balance & Expense -->
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <h5>Total Expenses: <span>00</span></h5>
-                    <h5>Balance: <span>00</span></h5>
+                    <h5>Total Expenses: <span id="total-expenses">00</span></h5>
+                    <h5>Balance: <span id="balance">00</span></h5>
                 </div>
                 <!-- Output Balance & Expense End -->
 
