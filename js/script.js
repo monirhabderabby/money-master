@@ -9,10 +9,17 @@ function getIncomeAndExpenses(){
     // Balance & Expense output
     const totalExp = document.getElementById('total-expenses');
     const balance = document.getElementById('balance');
+    
+    // String Error Handling
     if(isNaN(income) || isNaN(foodExp) || isNaN(rentExp) || isNaN(clothesExp)){
         alert("You can't write without numaric value")
     }
     else{
+        // Negative Error Handling
+        if(parseInt(income) < 0 || parseInt(foodExp) < 0 || parseInt(rentExp) < 0 || parseInt(clothesExp) < 0){
+            alert("You can't put negative number")
+        }
+
         // Total Expense Calculation
     const totalExpense = parseInt(foodExp)+parseInt(rentExp)+parseInt(clothesExp);
     // Set Total Expense
