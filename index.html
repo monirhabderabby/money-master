@@ -29,7 +29,7 @@
                     <h2 class="text-center">Income</h2>
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Income</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="input-income">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="income">
                       </div>
                 </div>
                 <!-- Income Section End -->
@@ -56,6 +56,7 @@
                     <button class="btn" id="calculate-btn">Calculate</button>
                     <!-- Calculate Button End -->
                 </div>
+                
                 <!-- Expense Section End -->
 
                 <!-- Output Balance & Expense -->
@@ -69,14 +70,14 @@
                 <!-- Money Saving Section -->
                 <div class="container d-flex justify-content-around mx-auto mt-5">
                     <p class="my-auto">Save: </p>
-                    <input class="input-save-percen my-auto" type="text">
+                    <input class="input-save-percen my-auto" type="text" id="save-percentage">
                     <p class="my-auto">%</p>
-                    <button class="save-btn">save</button>
+                    <button class="save-btn" id="save-btn">save</button>
                 </div>
                 <hr>
                 <div class="">
-                    <h5>Saving Amount: <span>00</span></h5>
-                    <h5>Remaining Balance: <span>00</span></h5>
+                    <h5>Saving Amount: <span id="saving-Amount">00</span></h5>
+                    <h5>Remaining Balance: <span id="remaining-balance">00</span></h5>
                 </div>
                 <!-- Money Saving Section End -->
                     
@@ -84,6 +85,6 @@
 
         </div>
     </section>
-    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
